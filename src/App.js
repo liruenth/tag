@@ -7,6 +7,7 @@ import Contact from './pages/contact';
 import Signin from './pages/signin';
 import Signup from './pages/signup';
 import NewGame from './pages/newGame';
+import GameMap from './pages/gameMap';
 import PageNotFound from './pages/page-not-found';
 import NewStep from './pages/newStep';
 import './main.css';
@@ -72,6 +73,13 @@ class App extends Component {
             <Route path="/addStep" render={() => (
               // this.isLoggedIn() ? (
                 <NewStep />
+              // ) : (
+              //   <Redirect to="/signin"/>
+              // )
+            )}/>
+            <Route path="/gameMap" render={() => (
+              // this.isLoggedIn() ? (
+                <GameMap />
               // ) : (
               //   <Redirect to="/signin"/>
               // )

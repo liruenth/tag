@@ -20,6 +20,10 @@ class Header extends Component {
                                 <Link url="/contact" name="contact" />
                                 <Link url="/signin" name="signin" />
                                 <Link url="/signup" name="signup" />
+                                <Link url="/addGame" name="addGame" />
+                                <Link url="/addStep" name="addStep" />
+                                <Link url="/gameMap" name="gameMap" />
+
                                 {this.props.loggedIn ? (
                                     <div>
                                         <Link url="/signout" name="signout" />
